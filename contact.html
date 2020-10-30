@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>contact</title>
     <style>
          body{
         background-image: url("bg.jpg");
@@ -30,10 +30,11 @@
     }
     label.logo{
         color: white;
-        font-size: 35px;
+        font-size: 55px;
         line-height:80px;
         padding: 0 100px;
         font-weight: bold;
+
     }
     nav ul{
         float: right;
@@ -97,9 +98,27 @@
         
 
     }
- 
+    input[type=submit] {
+    width: 20em;  height: 3em;
+}
+.submit{
+    transition:0.4s;
 
+}
+.submit:hover{
+    background: #1b9bff;
+        transition: .5s;
+        border-style: dotted;
+        border-color:black;
+}
 
+.circle img{
+    transition:1s ease;
+}
+.circle img:hover{
+    border-radius:50%;
+    transition:1s ease;
+}
     </style>
 
 
@@ -128,13 +147,14 @@
 <body>
 
             <nav>
-            <label class="logo">Contact Us</label>
+            <label class="logo" p style="font-family:cursive">Contact Us</label>
             <ul>
-                <li><a class="active" href="file:///home/user/Desktop/EOM/html/index.html">Home</a></li>
-                <li><a href="file:///home/user/Desktop/EOM/html/contentPage.html">Content </a></li>
-                <li><a href="file:///home/user/Desktop/EOM/html/contact.html">Contact us</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="contentPage.html">Content </a></li>
+                <li><a href="contact.html">Contact us</a></li>
                 
-                <li><a href="file:///home/user/Desktop/EOM/html/about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
             </ul>
             </nav>
     
@@ -162,8 +182,9 @@
         
         <label for="subject">Message</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px" ></textarea>
-
-        <input type="submit" value="Send">
+        
+        <input class="submit" type="submit"  value="Send">
+    </div>
 
    
         
@@ -175,8 +196,9 @@
     <h2 p style="color:white" p align="center">  Our number:
         093213244 </h2>
 
-
+    <div class="circle">
     <p style="text-align:center;"><img src="download.png"></p>
+    </div>
 
 
 

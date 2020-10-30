@@ -34,10 +34,11 @@
     }
     label.logo{
         color: white;
-        font-size: 35px;
+        font-size: 55px;
         line-height:80px;
         padding: 0 100px;
         font-weight: bold;
+        
     }
     nav ul{
         float: right;
@@ -62,7 +63,46 @@
         border-style: dotted;
         border-color:black;
     }
-    
+    .color img{
+        filter:grayscale(100%);
+        -webkit-filter:grayscale(100%);
+        -webkit-transition: all 1s ease;
+    }
+    .color img:hover{
+        filter:grayscale(0%);
+        filter:gray;
+        -webkit-filter:grayscale(0%);
+        filter:none;
+        transition:1s ease;
+    }
+    .color1 img{
+        filter:grayscale(100%);
+        -webkit-filter:grayscale(100%);
+        -webkit-transition: all 1s ease;
+    }
+    .color1 img:hover{
+        filter:grayscale(0%);
+        filter:gray;
+        -webkit-filter:grayscale(0%);
+        filter:none;
+        transition:1s ease;
+    }
+    .color2 img{
+        filter:grayscale(100%);
+        -webkit-filter:grayscale(100%);
+        -webkit-transition: all 1s ease;
+    }
+    .color2 img:hover{
+        filter:grayscale(0%);
+        filter:gray;
+        -webkit-filter:grayscale(0%);
+        filter:none;
+        transition:1s ease;
+    }
+
+
+
+
     </style>
     
     <meta charset="UTF-8">
@@ -88,12 +128,13 @@
 
    
         <nav>
-            <label class="logo">Best games of 2020</label>
+            <label class="logo" p style="font-family:cursive">Best games of 2020</label>
             <ul>
-                <li><a class="active" href="file:///home/user/Desktop/EOM/html/index.html">Home</a></li>
-                <li><a href="file:///home/user/Desktop/EOM/html/contentPage.html">Content</a></li>
-                <li><a href="file:///home/user/Desktop/EOM/html/contact.html">Contact us</a></li>
-                 <li><a href="file:///home/user/Desktop/EOM/html/about.html">About</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="contentPage.html">Content</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                 <li><a href="about.html">About</a></li>
+                 <li><a href="faq.html">FAQ</a></li>
               
                
             </ul>
@@ -106,9 +147,15 @@
 </div>
 
 <section>
+    <div class="color">
     <img  src="last1.jpg" style="width:100%">
+    </div>
+    <div class="color1">
     <img  src="watch.jpg" style="width:100%">
+    </div>
+    <div class="color2">
     <img  src="ghost.jpg" style="width:100%">
+    </div>
   </section>
 
 
